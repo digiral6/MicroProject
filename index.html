@@ -21,18 +21,23 @@
         smooth=" true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5" sourceWidth="800" sourceHeight="600"
         displayWidth="1280" displayHeight="720">
 
-
+        <a-assets>
+            <img id="img1" src="./SiapMiku2.png">
+            <a-asset-item id="model" src="./RubberDuck.obj"></a-asset-item>
+          </a-assets> 
 
         <a-marker type='barcode' value='0'>
-            <a-text value="Hatsune" side="double" position="0 0 -0.5" rotation="270 0 0" width="8" color="Teal"
+            <a-image src="#img1" position="0 -0.25 0" rotation="270 0 0" width="2" height="2"></a-image>
+            <a-text value="Hatsune" side="double" position="0 0.25 -1" rotation="270 0 0" width="8" color="Teal"
                 align="center">
             </a-text>
-            <a-text value="Miku" side="double" position="0 0 0.5" rotation="270 0 0" width="8" color="Teal"
+            <a-text value="Miku" side="double" position="0 0.25 1" rotation="270 0 0" width="8" color="Teal"
                 align="center">
             </a-text>
         </a-marker>
 
         <a-entity camera></a-entity>
+        
 
     </a-scene>
 
